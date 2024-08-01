@@ -1,15 +1,16 @@
 import React from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
+import AdminPage from './components/admin/adminpage';
+import Details from "./components/details/details";
 import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/navbar";
+import AdminLogin from './components/signup/signup';
 import About from "./routes/about/about";
 import Contact from "./routes/contact/contact";
 import Home1 from "./routes/home/home1";
 import RegistrationPage from "./routes/registration/registration";
 import Sponsors from "./routes/sponsors/sponsors";
-import AdminPage from './components/admin/adminpage';
-import AdminLogin from './components/signup/signup';
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -37,6 +38,7 @@ const App = () => {
           <Route path='about' element={<About />}/>
           <Route path='sponsors' element={<Sponsors />}/>
           <Route path='contact' element={<Contact />}/>
+          <Route path='details' element={<Details />}/>
         </Routes>
       </Layout>
     </BrowserRouter>
