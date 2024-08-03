@@ -26,26 +26,24 @@ const Home = () => {
   return (
     <div className="home-page1-container">
       <section className="home-page1-hero-section">
-        <img src={bg} alt="" className="home-page1-hero-image" />
+        <img src={bg} alt="Hero Background" className="home-page1-hero-image" />
       </section>
 
       <section id="register-now" className="register-now">
         <p className="register-content">
-          <span style={{ color: 'gray', fontSize: '35px' }}>"</span>
+          <span style={{ color: "gray", fontSize: "35px" }}>"</span>
           Registration for the Run for Equality 2 - 2024 is open now!
-          <a href="/registration" style={{ color: '#ff4500', textDecoration: 'none' }}>
-            Click here to register
-          </a>
-          <span style={{ color: 'gray', fontSize: '35px' }}>"</span>
+          <a href="/registration" style={{ color: "#ff4500", textDecoration: "none" }}>Click here to register</a>
+          <span style={{ color: "gray", fontSize: "35px" }}>"</span>
         </p>
       </section>
 
       <section className="home-page1-sub-header">
         <h1 className="motto1">
-          <span style={{ color: '#ff4500' }}>Our Motto </span>
-          <span style={{ color: 'gray', fontSize: '30px' }}>"</span>
+          <span style={{ color: "#ff4500" }}>Our Motto </span>
+          <span style={{ color: "gray", fontSize: "30px" }}>"</span>
           Not me, Not you, But we
-          <span style={{ color: 'gray', fontSize: '30px' }}>"</span>
+          <span style={{ color: "gray", fontSize: "30px" }}>"</span>
         </h1>
       </section>
 
@@ -70,14 +68,9 @@ const Home = () => {
           <Card
             title="Run for equality 2"
             img={rfe}
-            navlink={{
-              pathname: '/details',
-              state: {
-                title: 'Run for equality 2',
-                body_content: `"Run for Equality" is a marathon dedicated to promoting gender equality and raising awareness about the importance of equal opportunities for all genders. Our first event in 2023 was a tremendous success, attracting over 600+ participants, including enthusiastic staff members who joined the cause. This event aims to bring together individuals from all walks of life to support the movement towards a more inclusive and equitable society. By participating in "Run for Equality," we not only emphasize the need for gender equality but also demonstrate our commitment to creating a world where everyone has the same opportunities and rights, regardless of gender. Join us in this movement and make a difference by supporting gender equality through action and solidarity.`,
-                src_images: [rfe1, rfe2, rfe3, rfe4, rfe5, rfe6],
-              },
-            }}
+            navlink="/details"
+            body_content={`"Run for Equality" is a marathon dedicated to promoting gender equality and raising awareness about the importance of equal opportunities for all genders. Our first event in 2023 was a tremendous success, attracting over 600+ participants, including enthusiastic staff members who joined the cause. This event aims to bring together individuals from all walks of life to support the movement towards a more inclusive and equitable society. By participating in "Run for Equality," we not only emphasize the need for gender equality but also demonstrate our commitment to creating a world where everyone has the same opportunities and rights, regardless of gender. Join us in this movement and make a difference by supporting gender equality through action and solidarity.`}
+            src_images={[rfe1, rfe2, rfe3, rfe4, rfe5, rfe6]}
           />
         </div>
       </section>

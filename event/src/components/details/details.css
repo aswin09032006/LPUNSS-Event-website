@@ -47,6 +47,10 @@
     width: 30.33%;
 }
 
+.details-page-img:hover{
+    transform: scale(1.5);
+}
+
 @media (max-width: 1280px) {
     .details-page-img {
         width: 30%;

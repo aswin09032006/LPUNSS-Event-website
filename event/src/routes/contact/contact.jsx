@@ -35,7 +35,7 @@ const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <div className="image-container">
-        <video width="600" autoPlay muted>
+        <video width="600" autoPlay muted loop>
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -46,14 +46,14 @@ const ContactForm = () => {
         <p>Reach out and we'll get in touch within 24 hours.</p>
         <form ref={form} onSubmit={sendEmail}>
           <div className="input-row">
-            <input type="text" placeholder="Name" name="name" />
-            <input type="email" placeholder="Email" name="email" />
+            <input type="text" placeholder="Name" name="name" required />
+            <input type="email" placeholder="Email" name="email" required />
           </div>
           <div className="input-row">
-            <input type="tel" placeholder="Telephone" name="number" />
-            <input type="number" placeholder="Age" name="age" />
+            <input type="tel" placeholder="Telephone" name="number" required />
+            <input type="number" placeholder="Age" name="age" required />
           </div>
-          <textarea placeholder="Message..." name='message'></textarea>
+          <textarea placeholder="Message..." name='message' required></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
