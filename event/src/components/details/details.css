@@ -45,10 +45,11 @@
 
 .details-page-img {
     width: 30.33%;
+    display: flex;
 }
 
 .details-page-img:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 @media (max-width: 1280px) {

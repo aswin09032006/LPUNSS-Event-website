@@ -33,7 +33,7 @@ const Details = () => {
   }, [src_images]);
 
   if (!location.state) {
-    return null; 
+    return null;
   }
 
   return (
@@ -45,21 +45,22 @@ const Details = () => {
       transition={{ duration: 0.5 }}
     >
       <div className='details-page-header'>
-        <h1 className='details-page-title' data-aos="fade-down">{title}</h1>
+        <h1 className='details-page-title' data-aos="fade-left">{title}</h1>
       </div>
       <div className='details-page-body'>
         <p className='details-page-content' data-aos="fade-right">{body_content}</p>
-        <p className="img-gallery-text" data-aos="fade-left">Image Gallery</p>
-        <div className='details-page-img-container'>
+        <p className="img-gallery-text" data-aos="fade-up">Image Gallery</p>
+        <div className='details-page-img-container' data-aos="fade-up">
           {src_images.map((src, index) => (
             <motion.img
               src={src}
               key={index}
-              className={`details-page-img ${index === currentIndex ? 'visible' : ''}`}
+              className={`details-page-img`}
               alt={`detail-${index}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: index === currentIndex ? 1 : 0 }}
-              transition={{ duration: 1 }}
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: index === currentIndex ? 1 : 0 }}
+              // transition={{ duration: 1 }}
+              style={{transition:"all 0.5s ease-in-out"}}
             />
           ))}
         </div>

@@ -68,9 +68,7 @@ const Home = () => {
           <Card
             title="Run for equality 2"
             img={rfe}
-            navlink="/details"
-            body_content={`"Run for Equality" is a marathon dedicated to promoting gender equality and raising awareness about the importance of equal opportunities for all genders. Our first event in 2023 was a tremendous success, attracting over 600+ participants, including enthusiastic staff members who joined the cause. This event aims to bring together individuals from all walks of life to support the movement towards a more inclusive and equitable society. By participating in "Run for Equality," we not only emphasize the need for gender equality but also demonstrate our commitment to creating a world where everyone has the same opportunities and rights, regardless of gender. Join us in this movement and make a difference by supporting gender equality through action and solidarity.`}
-            src_images={[rfe1, rfe2, rfe3, rfe4, rfe5, rfe6]}
+            navlink={{ pathname: '/details', state: { title: 'Run for equality 2', body_content: '"Run for Equality" is a marathon dedicated to promoting gender equality and raising awareness about the importance of equal opportunities for all genders. Our first event in 2023 was a tremendous success, attracting over 600+ participants, including enthusiastic staff members who joined the cause. This event aims to bring together individuals from all walks of life to support the movement towards a more inclusive and equitable society. By participating in "Run for Equality," we not only emphasize the need for gender equality but also demonstrate our commitment to creating a world where everyone has the same opportunities and rights, regardless of gender. Join us in this movement and make a difference by supporting gender equality through action and solidarity.', src_images: [rfe1, rfe2, rfe3, rfe4, rfe5, rfe6] } }}
           />
         </div>
       </section>
@@ -78,24 +76,24 @@ const Home = () => {
       <section className="events-section1">
         <p className="events-title1">~Social Events</p>
         <div className="events-card-container1">
-          <Card title="Plantation Drive" img={placeholder} navlink="/" />
-          <Card title="Physiotherapy" img={physio} navlink="/" />
-          <Card title="Feeding Bellies" img={feedingbellies} navlink="/" />
-          <Card title="Nari: Her Right Her Prides" img={nari} navlink="/" />
-          <Card title="Joy of giving" img={joyofgiving} navlink="/" />
-          <Card title="Cancer Awareness" img={placeholder} navlink="/" />
-          <Card title="Voter Awareness" img={placeholder} navlink="/" />
-          <Card title="Samarpan" img={placeholder} navlink="/" />
-          <Card title="Swachh Bharat" img={swachhbharat} navlink="/" />
+          <Card title="Plantation Drive" img={placeholder} navlink={{ pathname: '/' }} />
+          <Card title="Physiotherapy" img={physio} navlink={{ pathname: '/' }} />
+          <Card title="Feeding Bellies" img={feedingbellies} navlink={{ pathname: '/' }} />
+          <Card title="Nari: Her Right Her Prides" img={nari} navlink={{ pathname: '/' }} />
+          <Card title="Joy of giving" img={joyofgiving} navlink={{ pathname: '/' }} />
+          <Card title="Cancer Awareness" img={placeholder} navlink={{ pathname: '/' }} />
+          <Card title="Voter Awareness" img={placeholder} navlink={{ pathname: '/' }} />
+          <Card title="Samarpan" img={placeholder} navlink={{ pathname: '/' }} />
+          <Card title="Swachh Bharat" img={swachhbharat} navlink={{ pathname: '/' }} />
         </div>
       </section>
 
       <section className="events-section1">
         <p className="events-title1">~Fundraising Events</p>
         <div className="events-card-container1">
-          <Card title="Rivals on the pitch" img={placeholder} navlink="/" />
-          <Card title="Smash it" img={placeholder} navlink="/" />
-          <Card title="Run for equality 2023" img={placeholder} navlink="/" />
+          <Card title="Rivals on the pitch" img={placeholder} navlink={{ pathname: '/' }} />
+          <Card title="Smash it" img={placeholder} navlink={{ pathname: '/' }} />
+          <Card title="Run for equality 2023" img={placeholder} navlink={{ pathname: '/' }} />
         </div>
       </section>
     </div>

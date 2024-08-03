@@ -6,7 +6,7 @@ import { MdArrowOutward } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import './card.css';
 
-const Card = ({ img, title, navlink, body_content, src_images }) => {
+const Card = ({ img, title, navlink }) => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -23,7 +23,7 @@ const Card = ({ img, title, navlink, body_content, src_images }) => {
         <h1 className="card-title">{title}</h1>
         <div className="card-nav">
           <Link to={navlink.pathname} state={navlink.state}>
-            <MdArrowOutward/>
+            <MdArrowOutward />
           </Link>
         </div>
       </div>
